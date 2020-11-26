@@ -1,0 +1,252 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	width: 1000px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+	background-color: #f5f5f5;
+	margin: 20px;
+	box-shadow: 0 0 15px black;
+}
+
+.form-group {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+}
+
+.registration-form,
+.personal-details {
+	padding: 40px;
+	width: 50%;	
+}
+
+.personal-details {
+	padding-left: 0;
+}
+
+.username,
+.email,
+.password,
+.name,
+.pol-date {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.username input[type="text"],
+.email input[type="email"] {
+	width: 100%;
+	background-color: #f5f5f5;
+	border: none;
+	border-bottom: 1px solid #6e6e6e;
+}
+
+.password input[type="password"],
+.name input[type="text"],
+.pol-date input[type="text"],
+.subject {
+	width: 50%;
+	background-color: #f5f5f5;
+	border: none;
+	border-bottom: 1px solid #6e6e6e;
+}
+
+select {
+	width: 100%;
+}
+
+.subject {
+	width: 55%;
+}
+.subject {
+   position: relative;
+   display: inline-block;
+}
+
+.subject:after {
+   content: "▼";
+   padding: 0 0px;
+   font-size: 12px;
+   position: absolute;
+   right: -5px;
+   top: 32px;
+   z-index: 1;
+   width: 10%;
+   height: 100%;
+   pointer-events: none;
+   box-sizing: border-box;
+}
+
+select {
+   appearance: none;
+   border: none;
+   background-color: #f5f5f5;
+}
+
+#password-2,
+#lastname,
+#date {
+	margin-left: 15px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select,
+input[type="date"] {
+	height: 30px;
+	margin-top: 25px;
+	padding-left: 15px;
+}
+
+img {
+	margin-top: 20px;
+	margin-right: 10px;
+}
+
+.checkbox-group {
+	margin: 30px 40px;
+}
+
+.checkbox-1 {
+	margin-bottom: 10px;
+}
+
+.checkbox label[for="checkbox"] {
+	margin-left: 5px;
+}
+
+.btn {
+	display: flex;
+	justify-content: flex-end;
+	margin: 40px;
+}
+
+input[type="submit"] {
+	height: 30px;
+	width: 150px;
+	background-color: #018b8d;
+	border-radius: 5px;
+	border: none;
+	color: white;
+}
+
+hr {
+	border: 1px solid rgb(221, 221, 221);
+}
+
+.checkbox-group label[for="checkbox-1"],
+.checkbox-group label[for="checkbox-2"] {
+	font-size: 14px;
+}
+
+.checkbox-group input[type="checkbox"] {
+	transform: scale(0.85);
+}
+
+@media screen and (min-width: 600px) and (max-width: 900px) {
+	.container {
+		width: 95%;
+	}
+	
+	.form-group {
+		flex-direction: column;
+	}
+
+	.registration-form {
+		width: 90%;
+	}
+
+	.personal-details {
+		width: 90%;
+		margin-left: 40px;
+	}
+
+	.subject {
+		width: 52%;
+	}
+
+	.subject:after {
+       	right: -25px;
+   	}
+}
+
+@media screen and (max-width: 600px) {
+	.container {
+		width: 95%;
+	}
+
+	.form-group {
+		flex-direction: column;
+	}
+
+	.registration-form {
+		width: 90%;
+	}
+
+	.personal-details {
+		display: flex;
+		flex-direction: column;
+		margin-left: 40px;
+		width: 90%;
+	}
+
+	.name {
+		display: flex;
+		flex-direction: column;
+		flex-basis: 100%;
+	}
+
+	#firstname {
+		width: 98%;
+	}
+
+	#lastname {
+		width: 98%;
+		margin-left: 0px;
+	}
+
+	.subject {
+		width: 110.5%;
+		flex-grow: 1;
+		margin-left: 90px;
+	}
+
+	#date {
+		width: 108%;
+		margin-left: 90px;
+	}
+
+	.pol-date {
+		display: flex;
+		flex-direction: column;
+		width: 90%;
+	}
+
+	.password {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	#password-1 {
+		width: 93.5%;
+	}
+
+	#password-2 {
+		margin-left: 40px;
+		width: 93.5%;
+	}
+
+	.subject:after {
+       	right: -65px;
+   	}
+}
+
+

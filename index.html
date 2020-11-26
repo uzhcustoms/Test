@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Форми</title>
+	<meta name="viewport" content="width=device-width,
+		 initial-scale=1">
+</head>
+
+<body>
+	<div class="container">
+		<form class="" name="registr" action="index.html" method="post">
+			<div class="form-group">
+
+				<div class="registration-form">
+					<div class="registration-h3">
+						<h3>Registration form</h3>
+					</div>
+
+					<div class="username">
+						<img src="image/username.png" width="30px">
+						<input id="username" type="text" placeholder="Username" name="registr" required>
+					</div>
+
+					<div class="email">
+						<img src="image/email.png" width="30px">
+						<input id="email" type="email" placeholder="Email address" name="registr" required>
+					</div>
+
+					<div class="password">
+						<img src="image/email.png" width="30px">
+						<input id="password-1" type="password" placeholder="Password" name="registr" required>
+						<input id="password-2" type="password" placeholder="Confirm password" name="registr" required>
+					</div>
+				</div>
+
+
+				<div class="personal-details">
+					<div class="personal-h3">
+						<h3>Personal details</h3>
+					</div>
+
+					<div class="name">
+						<input id="firstname" type="text" placeholder="First name" name="registr" required>
+						<input id="lastname" type="text" placeholder="Last name" name="registr" required>
+					</div>
+
+					<div class="pol-date">
+						<div class="subject">
+							<select name="registr">
+								<option disabled required>Male</option>
+								<option selected value="Other" required>Male</option>
+								<option value="Other" required>Female</option>
+							</select>
+						</div>
+						<input id="date" name="registr" type="text" placeholder="mm/dd/yyyy">
+					</div>
+				</div>
+
+			</div>
+
+
+			<div class="checkbox-group">
+				<div class="checkbox-1 checkbox">
+					<input id="checkbox-1" type="checkbox">
+					<label for="checkbox-1">I wont to recerve mews and special offers</label>
+				</div>
+				<div class="checkbox-2 checkbox">
+					<input id="checkbox-2" type="checkbox">
+					<label for="checkbox-2">I agree with the Terms and Conditions</label>
+				</div>
+			</div>
+			<hr>
+
+			<div class="btn">
+				<input type="submit" name="registr" id="btn" value="SUBMIT">
+			</div>
+			<br>
+		</form>
+	</div>
+</body>
+
+</html>
