@@ -23,7 +23,7 @@ body {
 .registration-form,
 .personal-details {
 	padding: 40px;
-	width: 50%;	
+	width: 50%;
 }
 
 .personal-details {
@@ -155,7 +155,7 @@ hr {
 	.container {
 		width: 95%;
 	}
-	
+
 	.form-group {
 		flex-direction: column;
 	}
@@ -248,5 +248,3 @@ hr {
        	right: -65px;
    	}
 }
-
-
